@@ -1,0 +1,60 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap');
+
+/* Font Classes */
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+/* Font weights */
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+/* Font sizes */
+.fs-large {
+    font-size: 2.5rem;
+}
+
+.fs-medium {
+    font-size: 1.8rem;
+}
+
+.fs-normal {
+    font-size: 1.2rem;
+}
+
+.fs-small {
+    font-size: 1rem;
+}
+
+/* Text styles */
+.text-elegant {
+    font-family: 'Sacramento', cursive;
+    line-height: 1.5;
+}
+
+.text-modern {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,333 @@
+/* Variabel warna */
+:root {
+    --pastel-pink: #FFC0CB;
+    --pastel-lavender: #C8A2C8;
+    --pastel-blue: #87CEEB;
+    --pastel-light-pink: #FFD1DC;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+}
+
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-lavender), var(--pastel-blue));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Animasi gradient background */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Style untuk section */
+section {
+    padding: 3rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    z-index: 1;
+}
+
+.animate-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.name-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 2s ease 0.5s forwards;
+}
+
+.birthdate {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeIn 2s ease 1s forwards;
+}
+
+.btn-open {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    animation: fadeIn 2s ease 1.5s forwards;
+}
+
+.btn-open:hover {
+    background: var(--white);
+    color: var(--pastel-lavender);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Main Section */
+.birthday-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: all 0.5s ease;
+}
+
+.birthday-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cake-image {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cake-image img {
+    max-width: 200px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.greeting-text h3 {
+    font-family: 'Sacramento', cursive;
+    color: var(--pastel-lavender);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Quotes Section */
+.quotes-section {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--pastel-lavender);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quote-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-card p {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.8rem;
+    color: var(--pastel-lavender);
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--pastel-lavender);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Surprise Section */
+.btn-surprise {
+    background: linear-gradient(45deg, var(--pastel-pink), var(--pastel-lavender));
+    color: var(--white);
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-surprise:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+/* Closing Section */
+.closing-text {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.signature {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background-color: var(--pastel-pink);
+    position: relative;
+    transform: rotate(45deg);
+    margin: 30px auto;
+    animation: heartbeat 1.5s infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: var(--pastel-pink);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -25px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: -25px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    5% {
+        transform: rotate(45deg) scale(0.9);
+    }
+    10% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    15% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(45deg) scale(0.8);
+    }
+}
+
+/* Utility classes */
+.d-none {
+    display: none !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .animate-title {
+        font-size: 2rem;
+    }
+    
+    .name-title {
+        font-size: 3rem;
+    }
+    
+    .quote-card p {
+        font-size: 1.5rem;
+    }
+    
+    .closing-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .animate-title {
+        font-size: 1.8rem;
+    }
+    
+    .name-title {
+        font-size: 2.5rem;
+    }
+    
+    .birthdate {
+        font-size: 1rem;
+    }
+    
+    .greeting-text h3 {
+        font-size: 2rem;
+    }
+    
+    .message {
+        font-size: 1rem;
+    }
+    
+    .quote-card {
+        padding: 1.5rem;
+    }
+    
+    .quote-card p {
+        font-size: 1.3rem;
+    }
+    
+    .closing-text {
+        font-size: 2rem;
+    }
+}

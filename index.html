@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun teh Nto 🎂</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Section Hero (Halaman Pembuka) -->
+    <section id="hero" class="hero-section">
+        <div class="container text-center">
+            <h1 class="animate-title">Selamat Ulang Tahun ke-24</h1>
+            <h2 class="name-title animate-name">Eteh Urang</h2>
+            <p class="birthdate">20 Agustus 2001</p>
+            <button id="openButton" class="btn-open">Buka Ucapan ✨</button>
+        </div>
+        <div id="confetti-container"></div>
+    </section>
+
+    <!-- Section Main (Halaman Utama) -->
+    <section id="main" class="main-section d-none">
+        <div class="container">
+            <div class="card birthday-card">
+                <div class="cake-image">
+                    <img src="https://i.pinimg.com/originals/ac/0a/da/ac0ada311d0efdcba7f710208590d46f.png" alt="Kue Ulang Tahun" class="img-fluid">
+                </div>
+                <div class="greeting-text">
+                    <h3 class="text-center">Selamat Ulang Tahun, etehhh</h3>
+                    <div class="message">
+                        <p class="line-text">Selamat ulang tahun untuk eteh urang nu baguer perhatian dan selalu aya, Rika Nurmala.</p>
+                        <p class="line-text">Semoga selalu sehat, bahagia, serta di permudahkan urusannya, dan semua impianmu tercapai.</p>
+                        <p class="line-text">best lahhh ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Quotes (Carousel) -->
+    <section id="quotes" class="quotes-section d-none">
+        <div class="container">
+            <h3 class="section-title text-center">Quotes Spesial Untukmu</h3>
+            <div id="quotesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="quote-card">
+                            <p>"Terima kasih sudah menjadi eeteeh yang baik."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote-card">
+                            <p>"mas bangga punya eeteeh sepertimu."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote-card">
+                            <p>"teh Nto inspirasi aku wkwkw."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote-card">
+                            <p>"Di hari spesialmu ini, semoga semua mimpimu menjadi kenyataan."</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#quotesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#quotesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Surprise -->
+    <section id="surprise" class="surprise-section d-none">
+        <div class="container text-center">
+            <button id="surpriseButton" class="btn-surprise">Klik untuk Kejutan 🎁</button>
+            <div id="fireworks-container" class="d-none"></div>
+        </div>
+    </section>
+
+    <!-- Section Closing -->
+    <section id="closing" class="closing-section d-none">
+        <div class="container text-center">
+            <p class="closing-text">Happy 24th Birthday, teh Nto 💐</p>
+            <p class="signature">— With love, dari adikmu yang selalu sayang.</p>
+            <div class="heart-animation">
+                <div class="heart"></div>
+            </div>
+        </div>
+    </section>
+
+    <audio id="birthdaySong" src="assets/audio/birthday-song.mp3" preload="auto"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/confetti.js"></script>
+    <script src="assets/js/fireworks.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
